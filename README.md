@@ -11,13 +11,6 @@ I used a combination of techniques to improve the training dataset.
 
 You only receive 50 reviews from a single API request. So, using pagination (using limit and offset inputs) ~3000 reviews were recieved significantly increasing the size of the training set
 
-The data still had only the first sentence of a review. To get around this I scraped the review url using Beautiful Soup to get the full text of the review.
-
-The chart below highlights the distribution of positive and negative reviews used 
-
-
-![image](https://user-images.githubusercontent.com/60298572/177405611-daae350f-e36d-4a3c-a7d8-3abd69ccaec2.png)
-
-
+The data still had only the first sentence of a review. To get around this I scraped the review url using Beautiful Soup to get the full text of the review. The distribution of positive and negative reviews used was around 2500 positive reviews and 500 negative reviews
 
 The resulting model has a prediction accuracy of 82%! Highlighting a successful sentiment classifier
